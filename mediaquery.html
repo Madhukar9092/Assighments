@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Document</title> 
+<script src="https://kit.fontawesome.com/6c067434ef.js" crossorigin="anonymous"></script>
+ 
+<style> 
+a{ 
+display: block; 
+text-decoration: none; 
+} 
+.sidenav{ 
+height: 100%; 
+width: 240px; 
+position: fixed; 
+overflow-x: hidden; 
+z-index: 1; 
+padding: 20px 0px 0px 0px; 
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+} 
+.main{ 
+display: flex; 
+margin-left: 300px; 
+padding-top: 90px; 
+} 
+p{ 
+padding-left: 50px; 
+} 
+h1 ~ a{ 
+line-height: 3; 
+color: gray; 
+} 
+.sidenav button{ 
+border-radius: 25px; 
+padding: 15px 50px 15px 50px; 
+background-color: #f25045; 
+color: white; 
+border: none; 
+margin-top: 70px; 
+} 
+.sidenav h1 a{ 
+color: black; 
+font-size: 40px; 
+} 
+img{ 
+border-radius: 50%; 
+height: 100px; 
+width: 100px; 
+} 
+.responsive{
+    display: none;
+}
+
+
+
+.item,.item1{ 
+height: 160px; 
+width: 140px; 
+border-radius: 25px; 
+margin: 10px; 
+padding: 10px;
+padding-bottom: 0px;
+box-shadow: 6px 8px 8px 6px rgba(0, 0, 0, 0.3); 
+text-align: center;
+justify-content: center; 
+} 
+.container{ 
+display: flex; 
+justify-content: center;
+margin-left: 200px;
+margin-top: 50px;
+
+
+}
+@media screen and (max-width:661px) {
+
+    .sidenav h1~a{
+        display: none;
+
+    }
+    .sidenav{
+        position: relative;
+        display: none;
+    }
+    
+    .sidenav button{
+        display:none ;    
+    }
+    .sidenav h1 a{
+        display: none;
+    }
+    .main h1{
+        position: absolute;
+        font-size: 28px;
+        left: 15%;
+        top: 15%;
+        
+    }
+    .main p{
+        position: absolute;
+        bottom: -25%;
+        left: 10%;
+    }
+    .container{
+        display: flex;
+        margin-left: 0px;
+        margin-top: 15px;
+        padding-top: 80px;
+        flex-wrap: wrap;
+    }
+    p{ 
+     padding-left: 15px; 
+     } 
+    .item1{
+        display: none;
+    }   
+    .item{ 
+        height: 140px; 
+        width: 100px; 
+        font-size: 14px;
+         
+    }
+    .responsive{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 5%;
+        width: 100%;
+
+     } 
+     body{
+         position: relative;
+     }
+}
+ 
+
+</style> 
+ 
+</head> 
+<body> 
+    <div class="responsive">
+        <div>
+            <i style="padding-top: 25px; color: chocolate;" class="fas fa-bars"></i>
+        </div>
+        <div>
+            <h1><a style="color: black; font-size: 20px;" href="">Lorem </a></h1>
+        </div> 
+        <div>
+            <i style="padding-top: 25px; color: chocolate; " class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    
+<div class="sidenav">
+<h1><a href="">Lorem <br> Ipsum</a></h1> 
+<a href="">About</a> 
+<a href="">Service</a> 
+<a href="">Cuisine</a> 
+<a href="">Contact</a> 
+<a href="">Gallery</a> 
+<a href="">Book</a> 
+<button>Cart</button> 
+</div> 
+ 
+<div class="main"> 
+<h1>What are you <br> having for Lunch?</h1>
+ 
+<p>Lorem ipsum dolor sit amet,<br> 
+consectetur adipisicing elit,<br> 
+sed do eiusmod tempor<br> 
+incididunt ut labore etc. <br>
+<span style="text-decoration: line-through; color: crimson;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p> 
+</div> 
+<div class="container"> 
+<span class="item"> 
+<img src="https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-400,h-3
+00,fo-auto" alt=""> 
+Mexican Taco 
+</span> 
+<span class="item"> 
+<img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mzm
+7rirnwmoqxfspj6aw" alt=""> 
+Farmhouse Pizza 
+</span> 
+<span class="item"> 
+<img src="https://www.recipetineats.com/wp-content/uploads/2019/08/Avocado-Chicken-Burgers_9.jpg" alt
+=""> 
+Chicken Burger 
+</span> 
+<span class="item">
+<img src="https://heatherlikesfood.com/wp-content/uploads/2012/05/Queso-Blanco_1.jpg" alt=""> 
+Loaded Nachos 
+</span> 
+<span class="item1"> 
+<img src="https://i.pinimg.com/originals/f3/31/8b/f3318b55f8c1e4453d841dd704cdbaa5.jpg" alt=""> <br>
+Hakka Noodles 
+</span> 
+</div> 
+</body> 
+</html>

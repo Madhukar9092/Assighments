@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<style>
+header{
+background-color: black;
+color: white;
+text-align: center;
+padding: 25px;
+text-transform: uppercase;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+form{
+width: 25%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+
+}
+select{
+
+    padding-bottom: 20px;
+}
+.bottom>span{
+
+padding: 8px;
+}
+footer{
+
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+footer>span{
+    color: yellowgreen;
+
+
+}
+
+
+</style>
+<body>
+    <header> Survey.com </header>
+    <h3> Submit your survey today ! </h3>
+
+    <form>
+        <div class="labels">
+        <label> Your name </label> <br>
+        <input type="text" name="username" placeholder="name"
+        </div>
+
+        <div class="lables"
+        <label> your email id </label> <br>
+        <input type="email" name="email" placeholder="email"
+        </div>
+
+        <div class="lables">
+        <label> select </label>
+        <select>
+              <option> option one </option>
+              <option> option two </option>
+              <option> option three </option>
+              <option> option four </option>
+              <option> option five </option>
+
+        </select>
+        <div class="lables">
+          <label> Checkbox 1: </label>
+          <input type="Checkbox">
+
+          <label> Checkbox 2: </labe>
+          <input type="Checkbox">
+
+          <label> Checkbox 3: </label>
+          <input type="Checkbox">
+
+
+        </div>
+
+        <div class="buttons">
+            <span><input  type="submit" name="submit"></span> 
+            <span><input  type="reset" name="reset"></span>
+        </div>
+    </form>
+    <footer>
+        Copyright© <span>YourSite.com</span>
+    </footer>
+</body>
+</html>
